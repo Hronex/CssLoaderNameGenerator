@@ -40,7 +40,6 @@ class CssLoaderNameGenerator {
 
 	public readonly getLocalIdent = (context: Record<string, unknown>, localIdentName: string, localName: string): string => {
 		let randName = this.randomNaming();
-		console.log(localName, randName);
 
 		if (/^i-/i.test(localName)) {
 			randName = `i-${randName}`;
