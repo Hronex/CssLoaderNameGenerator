@@ -26,7 +26,7 @@
     "project": "tsconfig.json",
     "tsconfigRootDir": "./"
   },
-  "ignorePatterns": ["__tests__/", "webpack.config.ts"],
+  "ignorePatterns": ["lib", "webpack.config.ts"],
   // Плагин с наборами правил для TypeScript
   "plugins": ["@typescript-eslint"],
   "rules": {

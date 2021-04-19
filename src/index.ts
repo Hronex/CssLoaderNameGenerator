@@ -1,4 +1,4 @@
-export default class CssLoaderNameGenerator {
+class CssLoaderNameGenerator {
 	private readonly _length: number;
 	private readonly _limit: number;
 
@@ -57,3 +57,4 @@ export default class CssLoaderNameGenerator {
 		return this.cache[localName];
 	};
 }
+module.exports = CssLoaderNameGenerator;
