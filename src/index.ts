@@ -1,27 +1,27 @@
 class CssLoaderNameGenerator {
-	private readonly _length: number;
-	private readonly _limit: number;
+	private readonly _maxLength: number;
+	private readonly _minLength: number;
 
 	private readonly usedNames: string[] = [];
 	private readonly cache: Record<string, string> = {};
 
-	constructor(length: number, limit: number) {
-		this._length = length;
-		this._limit = limit;
+	constructor(minLength: number, maxLength: number) {
+		this._maxLength = maxLength;
+		this._minLength = minLength;
 	}
 
 	private readonly randomNaming = (): string => {
-		let max = this._limit,
+		let max = this._minLength,
 			result = '';
 		const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_',
 			fchars = 'abcdefghjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_';
 
 		do {
-			if (this.usedNames.length >= Math.pow(64, max - 1) * 52 && max >= this._length) {
+			if (this.usedNames.length >= Math.pow(64, max - 1) * 52 && max >= this._maxLength) {
 				return 'OutOfPossibility';
 			}
 
-			if (this.usedNames.length >= Math.pow(64, max - 1) * 52 && max < this._length) {
+			if (this.usedNames.length >= Math.pow(64, max - 1) * 52 && max < this._maxLength) {
 				++max;
 			}
 
