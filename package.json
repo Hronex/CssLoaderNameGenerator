@@ -1,6 +1,6 @@
 {
   "name": "css-loader-name-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generator of short names of css classes for css-loader",
   "keywords": [
     "css",
