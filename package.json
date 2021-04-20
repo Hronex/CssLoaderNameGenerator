@@ -1,6 +1,6 @@
 {
   "name": "css-loader-name-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generator of short names of css classes for css-loader",
   "keywords": [
     "css",
@@ -14,9 +14,9 @@
     "build": "tsc",
     "format": "prettier --write 'src/**/*.ts'",
     "prepare": "npm run build",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
+    "version": "npm run format && git add -A",
     "incrementVersion": "npm version patch --force",
+    "postversion": "git push && git push --tags",
     "publish": "npm publish"
   },
   "repository": {
