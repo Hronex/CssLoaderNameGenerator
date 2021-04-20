@@ -2,6 +2,12 @@
   "name": "css-loader-name-generator",
   "version": "0.0.1",
   "description": "Generator of short names of css classes for css-loader",
+  "keywords": [
+    "css",
+    "css-loader",
+    "css class name generator",
+    "webpack"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
