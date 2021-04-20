@@ -35,14 +35,43 @@ const NameGenerator = new CssLoaderNameGenerator(1, 3);
 }
 ```
 
-#### Example code output
-<img src="https://github.com/Hronex/css-loader-name-generator/blob/main/src/code_example.png?raw=true" width="400" alt="Output code example">
-
 #### Additional
 Also you can use generator out of css-loader context.
 
 ```js
 const shortName = NameGenerator.getRandomName('my_module_name');
+```
+
+#### Example code output
+```css
+.T {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 31px;
+    padding: 0 12px;
+}
+.T:focus {
+    outline: none;
+    border-color: #3380cc; 
+}
+.T.o {
+    display: inline-block;
+}
+.T.Z {
+    background: whitesmoke;
+}
+.T.d {
+    -moz-appearance: textfield; 
+}
+.T.d::-webkit-outer-spin-button,
+.T.d::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
 ```
 
 [npm-image]: https://img.shields.io/npm/v/css-loader-name-generator.svg?style=flat-square
