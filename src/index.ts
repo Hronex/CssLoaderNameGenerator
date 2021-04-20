@@ -55,4 +55,8 @@ module.exports = class CssLoaderNameGenerator {
 
 		return this._cache[localName];
 	};
+
+	public readonly getRandomName = (localName: string): string => {
+		return this.getLocalIdent({}, '', localName);
+	};
 };
